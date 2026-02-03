@@ -1,0 +1,29 @@
+/* Simple dropdown menu styling */
+    .navbar-nav > .user-menu > .dropdown-menu {
+      width: 150px !important;
+      min-width: 150px;
+      right: 0;
+      left: auto;
+      top: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 5px 0;
+    }
+    
+    .navbar-nav > .user-menu > .dropdown-menu > li > a {
+      padding: 8px 15px;
+      color: #333;
+      display: block;
+      text-decoration: none;
+    }
+    
+    .navbar-nav > .user-menu > .dropdown-menu > li > a:hover {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    
+    .navbar-nav > .user-menu > .dropdown-menu > li > a > i {
+      margin-right: 8px;
+      width: 16px;
+    }

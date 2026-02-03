@@ -1,0 +1,68 @@
+/* Sidebar Improvements for Menu Toggle */
+
+.sidebar-menu .treeview-menu {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar-menu .treeview-menu.show {
+    display: block !important;
+}
+
+.sidebar-menu .treeview-menu.hide {
+    display: none !important;
+}
+
+.sidebar-menu .treeview > a > .pull-right-container > .fa-angle-left {
+    transition: transform 0.3s ease;
+}
+
+.sidebar-menu .treeview.active > a > .pull-right-container > .fa-angle-left {
+    transform: rotate(-90deg);
+}
+
+.sidebar-menu .treeview > a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.sidebar-menu .treeview-menu > li > a:hover {
+    background-color: rgba(255,255,255,0.05);
+    padding-left: 40px;
+    transition: padding-left 0.3s ease;
+}
+
+/* Active state styling */
+.sidebar-menu li.active > a {
+    background-color: rgba(255,255,255,0.1);
+    border-left: 3px solid #3c8dbc;
+}
+
+.sidebar-menu .treeview-menu > li.active > a {
+    background-color: #367fa9;
+    color: #fff;
+}
+
+/* Ensure proper cursor on clickable items */
+.sidebar-menu a[onclick] {
+    cursor: pointer;
+}
+
+/* Fix for submenu visibility */
+.sidebar-menu .treeview-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(0,0,0,0.1);
+}
+
+.sidebar-menu .treeview-menu > li > a {
+    display: block;
+    padding: 5px 5px 5px 35px;
+    color: #8aa4af;
+    text-decoration: none;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-menu .treeview-menu > li > a > .fa-circle-o {
+    margin-right: 5px;
+}
